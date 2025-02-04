@@ -1,137 +1,242 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web portofolio tailwind" />
+    <meta name="keyword" content="tailwindcss, CSS, tailwind" />
+    <meta name="author" content="codepolitan" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Web portofolio tailwind" />
-  <meta name="keyword" content="tailwindcss, CSS, tailwind" />
-  <meta name="author" content="codepolitan" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  <style>
-    /* body * {
+    <!-- style.css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/6e9ba85814.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- test styel -->
+    <style>
+      /* body * {
       border: 1px solid sandybrown;
     } */
-  </style>
-  <title>Tailwind Test 2</title>
-</head>
+    </style>
 
-<body>
+    <!-- title -->
+    <title>Tailwind Test 2</title>
+  </head>
 
-  <nav class="bg-white shadow-md sticky top-0 w-full z-10">
-    <div class="container mx-auto px-4 py-2 md:flex md:items-center md:justify-between">
-      <!-- Logo and Hamburger Button -->
-      <div class="flex justify-between items-center">
-        <a href="/" class="text-lg font-bold">My Website</a>
-        <button id="hamburger" class="px-3 py-2 rounded text-gray-500 hover:text-gray-900 focus:outline-none md:hidden"
-          aria-label="Toggle Menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
+  <body>
+    <nav class="bg-white shadow-md sticky top-0 w-full z-10">
+      <div
+        class="container mx-auto px-4 py-2 md:flex md:items-center md:justify-between"
+      >
+        <!-- Logo and Hamburger Button -->
+        <div class="flex justify-between items-center">
+          <a href="/" class="text-lg font-bold">My Website</a>
+          <button
+            id="hamburger"
+            class="px-3 py-2 rounded text-gray-500 hover:text-gray-900 focus:outline-none md:hidden"
+            aria-label="Toggle Menu"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
 
-
-      </div>
-
-      <!-- Navigation Menu -->
-      <div id="mobile-menu"
-        class="flex-col space-y-4 mt-4 md:mt-0 md:flex md:flex-row md:space-y-0 md:space-x-6 md:items-center h-full md:h-auto">
-        <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded " href="#about-me">About Me</a>
-        <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#skill-framework">Skill
-          Framework</a>
-        <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#recent-work">Recent
-          Work</a>
-        <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#contact-me">Contact
-          Me</a>
-      </div>
-    </div>
-  </nav>
-
-
-
-  <!-- About Me Section -->
-  <section id="about-me" class="w-full mx-auto scroll-mt-16 px-4 bg-gradient-to-br from-indigo-500 to-purple-500 md:bg-green-600">
-    <div class="px-16 py-8 text-center text-white">
-      <h1 class="w-full text-5xl font-bold">About Me</h1>
-      <!-- garis bawah -->
-      <div class="mb-4">
-        <div class="bg-slate-800 opacity-75 mt-2 h-1 rounded w-1/4 mx-auto">
+        <!-- Navigation Menu -->
+        <div
+          id="mobile-menu"
+          class="flex-col space-y-4 mt-4 md:mt-0 md:flex md:flex-row md:space-y-0 md:space-x-6 md:items-center h-full md:h-auto"
+        >
+          <a
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            href="#about-me"
+            >About Me</a
+          >
+          <a
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            href="#skill-framework"
+            >Skill Framework</a
+          >
+          <a
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            href="#recent-work"
+            >Recent Work</a
+          >
+          <a
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            href="#contact-me"
+            >Contact Me</a
+          >
         </div>
       </div>
-      <h2 class="text-3xl font-bold mb-3">Halo Semuanya!</h2>
-      <h3 class="mb-3">Perkenalkan, saya adalah seorang web developer yang memiliki pengalaman dalam membuat website menggunakan HTML, CSS, dan JavaScript. Saya juga memiliki kemampuan dalam menggunakan framework seperti React dan Vue. Selain itu, saya juga memiliki kemampuan dalam menggunakan library seperti jQuery dan Lodash.</h3>
-      <div class="w-60 h-60 rounded-full overflow-hidden mx-auto shadow-lg">
-        <img class="w-full h-full object-cover object-top" src="img/Foto_222011667.JPG" alt="Foto_222011667">
-      </div>
+    </nav>
 
-    </div>
-  </section>
-
-  <!-- Skill Framework Section -->
-  <section id="skill-framework" class="w-full mx-auto px-4 bg-white">
-    <div class="px-16 py-8">
-      <h1 class="w-full text-5xl font-bold text-center">Skill Framework</h1>
-      <!-- garis bawah -->
-      <div class="mb-4">
-        <div class="bg-slate-800 opacity-75 mt-2 h-1 rounded w-1/4 mx-auto">
+    <!-- About Me Section -->
+    <section
+      id="about-me"
+      class="w-full mx-auto scroll-mt-16 px-4 py-2 bg-gradient-to-br from-indigo-500 to-purple-500 md:bg-green-600"
+    >
+      <div class="px-16 py-8 text-center text-white">
+        <h1 class="w-full text-5xl font-bold">About Me</h1>
+        <!-- garis bawah -->
+        <div class="mb-4">
+          <div
+            class="bg-slate-800 opacity-75 mt-2 h-1 rounded w-1/4 mx-auto"
+          ></div>
+        </div>
+        <!-- <h2 class="text-3xl font-bold mb-3">Halo Semuanya!</h2> -->
+        <h3 class="mb-3">
+          Perkenalkan, saya adalah seorang web developer yang memiliki
+          pengalaman dalam membuat website menggunakan HTML, CSS, dan
+          JavaScript. Saya juga memiliki kemampuan dalam menggunakan framework
+          seperti React dan Vue. Selain itu, saya juga memiliki kemampuan dalam
+          menggunakan library seperti jQuery dan Lodash.
+        </h3>
+        <div class="w-60 h-60 rounded-full overflow-hidden mx-auto shadow-lg">
+          <img
+            class="w-full h-full object-cover object-top"
+            src="img/Foto_222011667.JPG"
+            alt="Foto_222011667"
+          />
         </div>
       </div>
-    </div>
-  </section>
-  
-  <!-- Recent Work Section -->
-  <section id="recent-work" class="w-full mx-auto px-4 bg-gray-300">
-    <div class="px-16 py-8">
-      <h1 class="w-full text-5xl font-bold text-center">Recent Work</h1>
-      <!-- garis bawah -->
-      <div class="mb-4">
-        <div class="bg-slate-800 opacity-75 mt-2 h-1 rounded w-1/4 mx-auto">
+      <div class="bg-white m-10 rounded-lg grid grid-cols-1 md:grid-cols-3">
+        <div class="shadow-lg m-4 p-4 rounded-lg text-center">
+          <i class="fas fa-laptop-code text-4xl text-blue-500 text-center"></i>
+          <!-- deskripsi skill -->
+          <div class="bg-white m-4">
+            <div class="font-bold text-lg mb-6">Front-End</div>
+            <div class="text-gray-500 mb-2">Bootstrap 5</div>
+            <hr class="mb-2" />
+            <div class="text-gray-500 mb-2">Tailwind CSS v4</div>
+            <hr class="mb-2" />
+            <div class="text-gray-500 mb-2">&nbsp;</div>
+            <hr class="mb-2" />
+            <button class="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded-br-lg rounded-tl-lg">Lihat Portofolio</button>
+          </div>
+        </div>
+        <div class="shadow-lg m-4 p-4 rounded-lg text-center">
+          <i class="fas fa-laptop-code text-4xl text-blue-500 text-center"></i>
+          <!-- deskripsi skill -->
+          <div class="bg-white m-4">
+            <div class="font-bold text-lg mb-6">Back-End</div>
+            <div class="text-gray-500 mb-2">PHP</div>
+            <hr class="mb-2" />
+            <div class="text-gray-500 mb-2">Java</div>
+            <hr class="mb-2" />
+            <div class="text-gray-500 mb-2">Python</div>
+            <hr class="mb-2" />
+            <button class="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded-br-lg rounded-tl-lg">Lihat Portofolio</button>
+          </div>
+        </div>
+        <div class="shadow-lg m-4 p-4 rounded-lg text-center">
+          <i class="fas fa-laptop-code text-4xl text-blue-500 text-center"></i>
+          <!-- deskripsi skill -->
+          <div class="bg-white m-4">
+            <div class="font-bold text-lg mb-6">Algorithm</div>
+            <div class="text-gray-500 mb-2">Data Structures</div>
+            <hr class="mb-2" />
+            <div class="text-gray-500 mb-2">DP</div>
+            <hr class="mb-2" />
+            <div class="text-gray-500 mb-2">Graph</div>
+            <hr class="mb-2" />
+            <button class="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded-br-lg rounded-tl-lg">Lihat Portofolio</button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <!-- Contact Me Section -->
-  <section id="contact-me" class="w-full mx-auto px-4 bg-indigo-700">
-    <div class="px-16 py-8">
-      <h1 class="w-full text-5xl font-bold text-center">Contact Me</h1>
-      <!-- garis bawah -->
-      <div class="mb-4">
-        <div class="bg-slate-800 opacity-75 mt-2 h-1 rounded w-1/4 mx-auto">
+    </section>
+
+    <!-- Skill Framework Section -->
+    <section id="skill-framework" class="w-full mx-auto px-4 py-2 bg-white">
+      <div class="px-16 py-8">
+        <h1 class="w-full text-5xl font-bold text-center">Skill Framework</h1>
+        <!-- garis bawah -->
+        <div class="mb-4">
+          <div
+            class="bg-slate-800 opacity-75 mt-2 h-1 rounded w-1/4 mx-auto"
+          ></div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <!-- Footer Section -->
-  <section id="footer" class="w-full mx-auto px-4 bg-white">
-    <div class="px-16 py-8">
-      <h1 class="w-full text-5xl font-bold text-center">Footer</h1>
-      <!-- garis bawah -->
-      <div class="mb-4">
-        <div class="bg-slate-800 opacity-75 mt-2 h-1 rounded w-1/4 mx-auto">
+    </section>
+
+    <!-- Recent Work Section -->
+    <section id="recent-work" class="w-full mx-auto px-4 py-2 bg-gray-300">
+      <div class="px-16 py-8">
+        <h1 class="w-full text-5xl font-bold text-center">Recent Work</h1>
+        <!-- garis bawah -->
+        <div class="mb-4">
+          <div
+            class="bg-slate-800 opacity-75 mt-2 h-1 rounded w-1/4 mx-auto"
+          ></div>
         </div>
       </div>
-    </div>
-  </section>
-  
+    </section>
 
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const mobileMenu = document.getElementById("mobile-menu");
+    <!-- Contact Me Section -->
+    <section id="contact-me" class="w-full mx-auto px-4 py-2 bg-indigo-700">
+      <div class="px-16 py-8">
+        <h1 class="w-full text-5xl font-bold text-center">Contact Me</h1>
+        <!-- garis bawah -->
+        <div class="mb-4">
+          <div
+            class="bg-slate-800 opacity-75 mt-2 h-1 rounded w-1/4 mx-auto"
+          ></div>
+        </div>
+      </div>
+    </section>
 
-    // hamburger.addEventListener("click", () => {
-    //   mobileMenu.classList.toggle("hidden");
-    // });
-    hamburger.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-      mobileMenu.classList.toggle("animate-slide-in");
-    });
+    <!-- Footer Section -->
+    <section id="footer" class="w-full mx-auto px-4 py-2 bg-white">
+      <div class="px-16 py-8">
+        <h1 class="w-full text-5xl font-bold text-center">Footer</h1>
+        <!-- garis bawah -->
+        <div class="mb-4">
+          <div
+            class="bg-slate-800 opacity-75 mt-2 h-1 rounded w-1/4 mx-auto"
+          ></div>
+        </div>
+      </div>
+    </section>
 
-    // Add the necessary CSS for the animation
-    const style = document.createElement('style');
-    style.innerHTML = `
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // hamburger.addEventListener("click", () => {
+      //   mobileMenu.classList.toggle("hidden");
+      // });
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("animate-slide-in");
+      });
+
+      // Add the necessary CSS for the animation
+      const style = document.createElement("style");
+      style.innerHTML = `
       @keyframes slide-in {
         from {
           transform: translateY(-100%);
@@ -146,19 +251,18 @@
         animation: slide-in 0.3s ease-out forwards;
       }
     `;
-    document.head.appendChild(style);
+      document.head.appendChild(style);
 
-    const navLinks = document.querySelectorAll(".container a");
-    navLinks.forEach(link => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const href = link.getAttribute("href");
-        document.querySelector(href).scrollIntoView({
-          behavior: "smooth"
+      const navLinks = document.querySelectorAll(".container a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const href = link.getAttribute("href");
+          document.querySelector(href).scrollIntoView({
+            behavior: "smooth",
+          });
         });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
